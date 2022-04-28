@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/account.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.0.0-web/css/all.min.css">
+    <title>Đăng nhập</title>
+    <script src="./assets/myscript.js"></script>
+</head>
+<body>
+    <div id="main">
+        <!------------- HEADER ------------->
+    <div class="header">
+        <div class="grid wide">
+        <!-- NAVIGATION -->
+            <div class="header__container">                
+                <div class="header__navbar-wrap">
+                    <a href="./index.html">
+                        <img src="./assets/img/Logo100.png" alt="" class="header__logo-img">
+                    </a>
+                    <div class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <a href="./index.html" class="header__navbar-link"> ĐIỂM ĐẾN</a>
+                                <ul class="header__subnav-list" style="width:131px">
+                                    <li class="header__subnav-item">
+                                        <a href="./dulichmienbac.html" class="header__subnav-link">Miền Bắc</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="./dulichmienbac.html" class="header__subnav-link">Miền Trung</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="./dulichmienbac.html" class="header__subnav-link">Miền Nam</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="./tintuc.html" class="header__navbar-link">TIN TỨC</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">DỊCH VỤ</a>
+                                <ul class="header__subnav-list" style="width:117px">
+                                    <li class="header__subnav-item">
+                                        <a href="" class="header__subnav-link">Khách sạn</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="" class="header__subnav-link">Vé máy bay</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="" class="header__subnav-link">VISA</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="./dangnhap.html" class="header__navbar-link">ĐĂNG NHẬP</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="./dangky.html" class="header__navbar-link">ĐĂNG KÝ</a>
+                            </li>
+                        </ul>
+                        <div class="header__navbar-interactive">
+                            <div class="header__navbar-interactive--phone">
+                                <i class="fa-solid fa-phone"></i> 1800 9999    
+                            </div>
+                            <div class="header__navbar-interactive--email">
+                                <i class="fa-solid fa-envelope"></i> HaloTravel@gmail.com.vn
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        
+    </div>
+    
+        <!-- BODY -->
+        <div class="body">
+            <div class="authentic__form-wrap">
+                <form action="">
+                    <div class="authentic__form-header">
+                        <h2 class="authentic__form-heading">ĐĂNG NHẬP</h2>
+                        <p class="authentic__form--nextPage-login">
+                            Bạn đã chưa có tài khoản? Hãy <a href="./dangky.html">Đăng ký</a>
+                        </p>
+                    </div>
+                    <div class="authentic__form-body">
+                      
+                            <table class="auto" style="width:80%; margin: auto;"> 
+                                <tr>
+                                    <td><label for="">Email:</label></td>
+                                    <td><input type="text" placeholder="Nhập email" value="" id="dangnhapemail"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="">Mật khẩu:</label></td>
+                                    <td><input type="password" placeholder="Nhập mật khẩu" value="" id="dangnhappassword"></td>
+                                </tr>
+                              
+                            </table>
+                        
+                        <div class="show_password">
+                            <input type="checkbox" id="show" class="show"  onchange ="showpassdn()">
+                            <label for="">Hiển thị mật khẩu</label>
+                        </div>
+                    </div>
+                    <div class="authentic__form-footer">
+                        <input type="submit" value="Đăng nhập" id="dangnhap">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!------------- FOOTER ------------->
+        <div id="footer">
+        <div class="grid wide">
+            <div class="split"></div>
+            <div class="footer__list">
+                <div class="row">
+                    <div class="c-4 col">
+                        <div class="footer__item">
+                            <h2 class="footer__title">CÔNG TY CỔ PHẦN DU LỊCH HALOTRAVEL</h2>
+                            <div class="footer__content-title">
+                                <div class="footer__content-sub-title">
+                                    <strong>Trụ sở chính: </strong>Phường Thanh Bình, TP.Hải Dương
+                                </div>
+                                <div class="footer__content-sub-title">
+                                    <strong>Chi nhánh Hà Nội: </strong>96 Định Công, phường Phương Liệt, quận Hoàng Mai
+                                </div>
+                                <div class="footer__content-sub-title">
+                                    <strong>Hotline: </strong>
+                                    <a href="">18001225</a>
+                                </div>
+                                <div class="footer__content-sub-title">
+                                    <strong>Giấy phép đăng kí kinh doanh (Mã số thuế): </strong>
+                                    102296262 do Sở KHĐT Hải Dương cấp
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-4 col">
+                        <div class="footer__item" style="display: flex;">
+                            <div class="footer-customer" style="margin-right:14%;">
+                                <h2 class="footer__title">GÓC KHÁCH HÀNG</h2>
+                                <div class="footer-customer--content">
+                                    <ul class="footer-customer--content-list">
+                                        <li class="footer-customer--content-item">
+                                            <a href="">Chính sách đặt tour</a>
+                                        </li>
+                                        <li class="footer-customer--content-item">
+                                            <a href="">Chính sách bảo mật</a>
+                                        </li>
+                                        <li class="footer-customer--content-item">
+                                            <a href="">Ý kiến khách hàng</a>
+                                        </li>
+                                        <li class="footer-customer--content-item">
+                                            <a href="">Phiếu góp ý</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-certification">
+                                <h2 class="footer__title">CHỨNG NHẬN</h2>
+                                <div class="footer-certification--dmca">
+                                    <a href="" class="footer-certification-link">
+                                        <img src="./assets/img/ChungNhanDMCA.png" alt="" class="footer-certification-img">
+                                    </a>
+                                </div>
+                                <div class="footer-certifacation-industry">
+                                    <a href="" class="footer-certification-link">
+                                        <img src="./assets/img/BoCongThuong.png" alt="" class="footer-certification-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-4 col">
+                        <div class="footer__item">
+                            <h2 class="footer__title">TẦM NHÌN VÀ SỨ MỆNH</h2>
+                            <div class="footer__content-title">
+                                <div class="footer__content-sub-title">
+                                    <strong>Tầm nhìn: </strong>Trở thành Thương hiệu du lịch được yêu thích nhất của người Việt Nam
+                                </div>
+                                <div class="footer__content-sub-title">
+                                    <strong>Sứ mệnh: </strong>Tạo ra các sản phẩm du lịch phong phú, nhân văn cho mọi gia đình Việt.
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__sources">
+            <div class="grid wide">
+                <p>Copyright 2022 dulichviet.com.vn and www.datviettour.com.vn</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+        /*Hiển thị mật khẩu */
+        function showpassdn() {
+            var showdn = document.getElementById("show");
+            var dangnhappassword = document.getElementById("dangnhappassword");
+
+            if (showdn.checked == false) {
+                dangnhappassword.type = "password";
+            }
+            else {
+                dangnhappassword.type = "text";
+            }
+        }
+    </script>
+</body>
+</html>

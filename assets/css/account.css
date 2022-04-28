@@ -1,0 +1,190 @@
+/* Đăng ký */
+.body{
+    position: relative;
+    margin-top: 50px;
+}
+.authentic__form-wrap{    
+    max-width: 500px;
+    background-color: var(--while-color);
+    margin: auto;
+    border: 1px solid var(--background-color);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.authentic__form-header{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.authentic__form-heading{
+    font-size: 1.8rem;
+    padding: 15px 0;
+}
+
+.authentic__form--nextPage-login{
+    font-size: 1.6rem;
+    padding: 5px 0 10px 0;
+    text-decoration: none;
+}
+
+.authentic__form--nextPage-login a{
+    font-size: 1.6rem;
+    padding: 5px 0 10px 0;
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+
+.authentic__form-body label{
+    padding: 0 10px;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.authentic__form-body table.auto{
+    table-layout: fixed;
+}
+
+.authentic__form-body input{
+    font-size: 1.5rem;
+    outline: none;
+    padding: 6px 0 6px 8px;
+    margin: 3px ;
+    width: 100%;
+}
+
+.authentic__form-footer{
+    margin: 25px 0;
+    text-align: center;
+}
+
+.authentic__form-footer input{
+    padding: 8px 15px;
+    font-size: 1.5rem;
+    background-color: var(--background-color);
+    color: var(--while-color);
+    border: 1px solid var(--background-color);
+    cursor: pointer;
+}
+
+.show_password{
+    margin: 20px 160px;
+}
+
+.show_password .show{
+   width: 20px;
+   margin: 0;
+}
+
+/* màu viền cho ô input */
+.form-control.valid input{
+    border-color: var(--background-color);
+    outline-color: var(--background-color);
+} 
+
+.form-control.invalid input{
+    border-color: rgb(235, 58, 58);
+    outline-color: rgb(235, 58, 58);
+}
+
+
+
+/* đăng ký */
+/*------------------banner--------------*/
+
+.content {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.auth {
+    display: block;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+
+.auth__form {
+    padding: 15px 40px 30px;
+
+
+}
+
+.form-control {
+    padding-bottom: 20px;
+    display: flex;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+    .form-control label {
+        display: inline-block;
+        margin-bottom: 5px;
+        width: 45%;
+        font-size: 1.5rem;
+        padding-top: 5px;
+    }
+
+    .form-control input {
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+        outline-color: var(--primary-color);
+    }
+
+    .form-control.valid input {
+        border-color: var(--primary-color);
+        outline-color: var(--primary-color);
+    }
+
+    .form-control.invalid input {
+        border-color: #ec3925;
+        outline-color: #ec3925;
+    }
+
+    .form-control.invalid p {
+        visibility: visible;
+        color: #12c7e7;
+    }
+
+    .form-control p {
+        visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        font-size: 1.4rem;
+    }
+
+.auth_btn {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border: none;
+    color: #ffff;
+    /* display: block; */
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 3px;
+    outline: none;
+}
+
+    .auth_btn:hover {
+        background-color: var(--hover-color) ;
+    }
+
+.auth:nth-child(2) {
+    display: none;
+}
+

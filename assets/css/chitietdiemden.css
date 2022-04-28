@@ -1,0 +1,219 @@
+
+.content__detail-highlight,
+.content__detail-schedule{
+    color: #333;
+}
+
+.content__detail-highlight--header,
+.content__detail-schedule--header{
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 15px;
+    margin: 40px 0 15px 0;
+}
+
+.content__detail-highlight--header i,
+.content__detail-schedule--header i{
+    margin-right: 10px;
+}
+
+.line{
+    border: 0.1px dotted #888;
+    margin-bottom: 15px;
+}
+
+.content__detail-highlight-body,
+.content__detail-schedule--listDay{
+    font-size: 1.6rem;
+    line-height: 24px;
+}
+
+.session ul{
+    padding-left: 20px;
+}
+
+.content__detail-schedule--listDay{
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 60px;
+}
+
+.content__detail-schedule--listDay::before{
+    position: absolute;
+    content: "";
+    border-left: 4px dotted var(--background-color);
+    top: 20px;
+    left: 0;
+    bottom: 0;
+}
+
+
+.content__detail-schedule--title{
+    position: relative;
+    letter-spacing: 0.8px;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: var(--while-color);
+    background-color: var(--background-color);
+    margin-bottom: 5px;
+
+} 
+
+.content__detail-schedule--title::before{
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    top: 10px;
+    left: -23px;  
+    z-index: 1;  
+}
+
+.content__detail-schedule--title::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--background-color);
+    border-radius: 100%;
+    background-color: var(--while-color);
+    top: 5px;
+    left: -28px;   
+}
+
+.content__detail-schedule--contDay{
+    background-color: #f1f1f1;
+    padding: 8px 0 8px 10px;
+    border-radius: 5px;
+}
+
+.content__places-header a{
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--background-color);
+    letter-spacing: 1px;
+}
+
+.content__places-header a:hover{
+    color: rgb(12, 182, 41);
+}
+
+
+.content__detail-info table{
+    font-size: 1.6rem;
+    line-height: 20px;
+}
+
+.content__detail-info table > caption{
+    text-align: left;
+    font-size: 1.8rem;
+    line-height: 24px;
+    color: var(--background-color);
+    margin-bottom: 10px;
+}
+
+
+.content__detail-info td{
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(194, 187, 187, 0.61);   
+}
+
+.content__detail-info tr:last-child td{
+    border-bottom: none;
+}
+
+
+
+.boxPrices{
+    width: 100%;
+    border: 1px solid rgb(6, 165, 14);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.boxPrices-header{
+    display: flex;
+    font-size: 1.8rem;
+    line-height: 24px;
+    padding-bottom: 20px;
+    color: var(--while-color);
+}
+
+.boxPrices-header p{
+    padding-left: 10px;
+    font-size: 2.4rem;
+}
+
+.boxPrices-form input{
+    padding: 8px 8px;
+    width: 100%;
+    font-size: 1.6rem;
+    outline: none;
+    border-radius: 3px;
+}
+
+.boxPrices-form--day input{
+    background-color: rgb(236, 232, 232);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.boxPrices-form-book input{
+    background-color: rgb(175, 211, 12);
+    color: var(--while-color);
+    border: none;
+
+    
+}
+
+
+
+.content__detail-map{
+    font-size: 1.6rem;
+    line-height: 20px;
+    background-color: #ccc;
+    border-radius: 3px;
+    padding: 12px 10px 0 10px;
+}
+
+.content__detail-map ul{
+    list-style: none;
+}
+
+.content__detail-map li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(245, 241, 241, 0.877);
+}
+
+.content__detail-map li:first-child{
+    padding-top: 0;
+}
+
+.content__detail-map a{
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+}
+
+.content__detail-map a:hover{
+    color: rgb(208, 16, 214);
+}
+.content__detail-map i{
+    padding-right: 5px;
+}
+
+.fix{
+    position: fixed;
+}
+
+@media (max-width:740px){
+    .content__detail-highlight-body td{
+        display: table-row;
+    }
+}

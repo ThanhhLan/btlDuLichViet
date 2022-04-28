@@ -1,0 +1,87 @@
+/* trang tin tức */
+.content__new{
+    margin-top: 30px;
+}
+/* trang con cấp 2: du lịch miền bắc */
+.content__introduce{
+    margin-bottom: 40px;
+}
+
+.content__introduce-header{
+    margin-bottom: 20px;
+}
+
+.content__introduce-title{
+    font-size: 2.5rem;
+    line-height: 25px;
+    font-weight: 550;
+    margin-bottom: 15px;
+}
+
+.content__introduce-judge{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.content__introduce-judge strong{
+    padding: 0 8px;
+}
+
+.content__introduce-body{
+    font-size: 1.8rem;
+    line-height: 25px;
+}
+
+/* Trang chi tiết tin tức */
+
+.content__body-posts-item p{
+    font-size: 1.6rem;
+    line-height: 28px;
+}
+
+.content__body-posts-name{
+    margin-bottom: 30px;
+}
+
+.content__body-posts-img{
+    margin-bottom: 30px;
+}
+
+.content__body-posts-info{
+    font-size: 1.6rem;
+    line-height: 28px;
+}
+
+.content__body-posts-info ul{
+    margin-left: 18px;
+}
+
+
+.active{
+    position: fixed;
+}
+.content__body-map-name{
+    margin-bottom: 15px;
+}
+
+.content__body-map-list{
+    list-style: none;
+}
+
+.content__body-map-item a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    line-height: 30px;
+    color: var(--black-color);
+    margin-left: 5px;
+}
+
+.content__body-map-item a:hover{
+    color: var(--background-color);
+
+}
+
+
+
+
+

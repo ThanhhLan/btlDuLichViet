@@ -1,0 +1,340 @@
+
+/* BODY */
+/* Advertisement */
+.advertisement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--while-color);
+}
+
+.advertisement__wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.advertisement__evaluate{
+    width: 190px;
+    margin: 0 20px ;
+    text-align: center;
+}
+
+.advertisement__evaluate-wrap{
+    margin-left: 40px;
+}
+
+.advertisement__safe-icon{
+    margin-top: 10px;
+}
+
+.advertisement__description{
+    margin-top: 15px;
+}
+
+.advertisement__quality{
+    color:rgb(13, 161, 8);
+    font-size: 1.3rem;
+    line-height: 13px;
+    letter-spacing: 0.6px;
+    margin-bottom: 8px;
+}
+
+.advertisement__slogan{
+    font-size: 1.3rem;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+}
+
+.sereprate{
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 400px;
+}
+
+/* Điểm du lịch */
+
+.content__section-place{
+    height: 500px;
+}
+
+.content__heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__heading-icon{
+    margin-top: 20px;
+   margin-bottom: 20px;
+   background-color: #fff;
+}
+
+.content__heading-icon--img{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.content__heading-title a{
+    text-decoration: none;
+    color:rgb(13, 161, 8);
+}
+
+
+/* Place item*/
+.content__place-list{
+    margin-top: 50px;
+}
+.content__tour-item{
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid rgba(196, 243, 169, 0.932);
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.content__tour-item:hover{
+    border: 1px solid rgb(73, 243, 6);
+}
+
+
+.content__tour-item--img{
+    width: 100%;
+    padding-top: 80%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+
+}
+
+.content__tour-item--img:hover{
+    opacity: 0.8;
+}
+
+.content__tour-item-main-info{
+    background-color: #fff;
+    padding: 8px 0;
+}
+.content__tour-item--contact{
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 10px 18px 10px;
+
+}
+
+.content__tour-item--rating{
+    font-size: 1.2rem;
+    color: rgb(202, 198, 198);
+}
+
+.content__tour-item-star-gold{
+    color: var(--star-gold-color);
+}
+
+.content__tour-item-price{
+    font-size: 1.8rem;
+    font-weight: 550;
+    color: #08aa38;
+}
+
+.content__tour-item--favorite{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+
+}
+
+.content__tour-item--hot-img{
+    width: 40px;
+}
+
+.content__tour-item--name a{
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 550;
+    line-height: 2rem;
+    margin: 0 8px;
+    height: 40px;
+    overflow: hidden;   
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: #dd1472;
+    cursor: pointer;
+    /* Từ dòng 651 - 657: khi tên của tour dài quá 2 dòng thì hiện dấu ... ở cuối dòng 2 */
+}
+
+.content__tour-item--name a:hover{
+    color: rgb(224, 65, 171);
+}
+
+.content__tour-item--detail{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 8px 12px 8px;
+    padding-top: 8px;
+    border-top: 1px solid #d1cece;
+    
+}
+
+.content__tour-item-info{
+    text-align: left;
+    font-size: 1.3rem;
+    margin-left: 5px;
+}
+
+.content__tour-item-sub-info{
+    margin-bottom: 6px;
+}
+
+.content__tour-item-info i{
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+
+.content__tour-item-more{
+    position: relative;
+    margin: auto;
+}
+
+.content__tour-item-btn--link{
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 4px 8px;
+    background-color: var(--primary-color);
+    color: var(--while-color);
+    letter-spacing: 0.8px;
+    animation: discoloration ease 1s;
+    animation-iteration-count: infinite;
+}
+
+
+.content__tour-item-btn-detail::after{
+    content: "";
+    position: absolute;
+    transform: translateX(100%);
+    top: calc(100% - 22px);
+    right:0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--primary-color); 
+}
+
+
+/* New item */
+.content__new-item{
+    box-sizing: border-box;
+    border: 1px solid rgba(196, 243, 169, 0.932);
+    margin-bottom: 32px;
+}
+
+.content__new-item:hover{
+    border: 1px solid rgb(63, 207, 6);
+}
+
+.content__new-img{
+    padding-top: 60%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+
+.content__new-name a{
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 550;
+    line-height: 2.3rem;
+    margin: 15px 8px;
+    height: 46px;
+    overflow: hidden;   
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: #dd1472;
+    cursor: pointer;
+}
+
+.content__new-contact{
+    display: flex;
+    font-size: 1.4rem;
+    margin-left: 8px;
+}
+
+.content__new--view{
+    margin-left: 20px;
+}
+
+.content__new--specific-content{
+    margin: 15px 8px;
+    font-size: 1.5rem;
+    text-align: justify;  
+    line-height: 1.8rem;
+    height: 9rem;
+    overflow: hidden;   
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+
+
+/* Services item */
+.content__services-list{
+    margin-top: 30px;
+    margin-bottom: 32px;
+}
+
+.content__service-item{
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    border-radius: 8px;
+    color: var(--while-color);
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+.content__service-item:hover{
+    border:1px solid rgb(123, 224, 29) ;
+}
+
+.content__service-icon-wrap{
+    margin: 18px 12px 24px 12px;
+}
+
+.content__service-icon{
+    font-size: 4rem;
+    
+}
+
+.content__service-description a{
+    text-decoration: none;
+    color: var(--while-color);
+    text-align: left;
+    margin-right: 5px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.content__service-description h2{
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.content__service-description p{
+    font-size: 1.3rem;
+
+}
+
+

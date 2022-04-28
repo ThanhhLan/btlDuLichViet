@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/account.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.0.0-web/css/all.min.css">
+    <title>Đăng ký</title>
+    <!-- <script src="./assets/myscript.js"></script> -->
+</head>
+<body>
+    <div id="main">
+        <!------------- HEADER ------------->
+    <div class="header">
+        <div class="grid wide">
+        <!-- NAVIGATION -->
+            <div class="header__container">                
+                <div class="header__navbar-wrap">
+                    <a href="./index.html">
+                        <img src="./assets/img/Logo100.png" alt="" class="header__logo-img">
+                    </a>
+                    <div class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <a href="./index.html" class="header__navbar-link"> ĐIỂM ĐẾN</a>
+                                <ul class="header__subnav-list" style="width:131px">
+                                    <li class="header__subnav-item">
+                                        <a href="./dulichmienbac.html" class="header__subnav-link">Miền Bắc</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="./dulichmienbac.html" class="header__subnav-link">Miền Trung</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="./dulichmienbac.html" class="header__subnav-link">Miền Nam</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="./tintuc.html" class="header__navbar-link">TIN TỨC</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">DỊCH VỤ</a>
+                                <ul class="header__subnav-list" style="width:117px">
+                                    <li class="header__subnav-item">
+                                        <a href="" class="header__subnav-link">Khách sạn</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="" class="header__subnav-link">Vé máy bay</a>
+                                    </li>
+                                    <li class="header__subnav-item">
+                                        <a href="" class="header__subnav-link">VISA</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="./dangnhap.html" class="header__navbar-link">ĐĂNG NHẬP</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="./dangky.html" class="header__navbar-link">ĐĂNG KÝ</a>
+                            </li>
+                        </ul>
+                        <div class="header__navbar-interactive">
+                            <div class="header__navbar-interactive--phone">
+                                <i class="fa-solid fa-phone"></i> 1800 9999    
+                            </div>
+                            <div class="header__navbar-interactive--email">
+                                <i class="fa-solid fa-envelope"></i> HaloTravel@gmail.com.vn
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        
+    </div>
+    
+        <!-- BODY -->
+        
+        <div class="content">
+            <div id="reg-form" class="auth">
+                        <form action="Dangky.aspx" method="post" runat="server">
+                            <div class="authentic__form-header">
+                                <h2 class="authentic__form-heading">TẠO TÀI KHOẢN MỚI</h2>
+                                <p class="authentic__form--nextPage-login">
+                                    Bạn đã có tài khoản? Mời <a href="./dangnhap.html">Đăng nhập</a>
+                                </p>
+                            </div>
+                        <div class="auth__form">
+                            <div class="form-control">
+                                <label for="username">Họ và tên:</label>
+                                <input type="text" id="name" placeholder="Nhập tên đăng nhập" name="name"/>
+                                <p runat="server" id="name_error"></p>
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Email:</label>
+                                <input type="text" id="email" placeholder="Nhập email" name="email"/>
+                                <p></p>
+                            </div>
+                            <div class="form-control">
+                                <label for="number">Số điện thoại:</label>
+                                <input type="text" id="number" placeholder="Nhập số điện thoại" name="number"/>
+                                <p></p>
+                            </div>
+                            <div class="form-control">
+                                <label for="password">Mật khẩu:</label>
+                                <input type="password" id="password" placeholder="Nhập mật khẩu" name="password"/>
+                                <p></p>
+                            </div>
+                            <div class="form-control">
+                                <label for="repassword">Nhập lại mật khẩu:</label>
+                                <input type="password" id="repassword" placeholder="Nhập lại mật khẩu" name="repassword"/>
+                                <p></p>
+                            </div>
+                            <p id="btn_error" style="color:red"></p>
+                            <button class="auth_btn" id="btnReg">Đăng ký</button>
+                        </div>
+                        </form>
+                    </div>
+                
+            </div>
+
+        <!------------- FOOTER ------------->
+        <div id="footer">
+        <div class="grid wide">
+            <div class="split"></div>
+            <div class="footer__list">
+                <div class="row">
+                    <div class="c-4 col">
+                        <div class="footer__item">
+                            <h2 class="footer__title">CÔNG TY CỔ PHẦN DU LỊCH HALOTRAVEL</h2>
+                            <div class="footer__content-title">
+                                <div class="footer__content-sub-title">
+                                    <strong>Trụ sở chính: </strong>Phường Thanh Bình, TP.Hải Dương
+                                </div>
+                                <div class="footer__content-sub-title">
+                                    <strong>Chi nhánh Hà Nội: </strong>96 Định Công, phường Phương Liệt, quận Hoàng Mai
+                                </div>
+                                <div class="footer__content-sub-title">
+                                    <strong>Hotline: </strong>
+                                    <a href="">18001225</a>
+                                </div>
+                                <div class="footer__content-sub-title">
+                                    <strong>Giấy phép đăng kí kinh doanh (Mã số thuế): </strong>
+                                    102296262 do Sở KHĐT Hải Dương cấp
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-4 col">
+                        <div class="footer__item" style="display: flex;">
+                            <div class="footer-customer" style="margin-right:14%;">
+                                <h2 class="footer__title">GÓC KHÁCH HÀNG</h2>
+                                <div class="footer-customer--content">
+                                    <ul class="footer-customer--content-list">
+                                        <li class="footer-customer--content-item">
+                                            <a href="">Chính sách đặt tour</a>
+                                        </li>
+                                        <li class="footer-customer--content-item">
+                                            <a href="">Chính sách bảo mật</a>
+                                        </li>
+                                        <li class="footer-customer--content-item">
+                                            <a href="">Ý kiến khách hàng</a>
+                                        </li>
+                                        <li class="footer-customer--content-item">
+                                            <a href="">Phiếu góp ý</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-certification">
+                                <h2 class="footer__title">CHỨNG NHẬN</h2>
+                                <div class="footer-certification--dmca">
+                                    <a href="" class="footer-certification-link">
+                                        <img src="./assets/img/ChungNhanDMCA.png" alt="" class="footer-certification-img">
+                                    </a>
+                                </div>
+                                <div class="footer-certifacation-industry">
+                                    <a href="" class="footer-certification-link">
+                                        <img src="./assets/img/BoCongThuong.png" alt="" class="footer-certification-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-4 col">
+                        <div class="footer__item">
+                            <h2 class="footer__title">TẦM NHÌN VÀ SỨ MỆNH</h2>
+                            <div class="footer__content-title">
+                                <div class="footer__content-sub-title">
+                                    <strong>Tầm nhìn: </strong>Trở thành Thương hiệu du lịch được yêu thích nhất của người Việt Nam
+                                </div>
+                                <div class="footer__content-sub-title">
+                                    <strong>Sứ mệnh: </strong>Tạo ra các sản phẩm du lịch phong phú, nhân văn cho mọi gia đình Việt.
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__sources">
+            <div class="grid wide">
+                <p>Copyright 2022 dulichviet.com.vn and www.datviettour.com.vn</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+ <!-- <script> 
+    let form = document.querySelector('.authentic__form-body');
+    let name = document.getElementById('name');
+    let email = document.getElementById('email');
+    let number = document.getElementById('number');
+    let password = document.getElementById('password');
+    let repass = document.getElementById('re_password');
+    let btn_dangky = document.getElementById('btn_dangky');
+    let inputs = form.querySelectorAll('input');
+
+
+    // function setError(input, message){
+    //     const formControl = input.parentElement;
+    //     const p = formControl.querySelector('p');
+    //     p.innerText = message;
+    //     input.focus();
+    // }
+
+    function setError(key, mess){
+        document.getElementById(key+'_error').innerHTML = mess;
+    }
+
+    function setSuccess(key){
+        const formControl = document.getElementsByTagName("input");
+        const p = document.getElementById(key+'_error');
+        p.innerText = '';
+        formControl.className = "form-control valid";
+    }
+    
+    email.onblur = function () {
+
+        if(email.value.length < 0){
+            setError(email,'Email không được để trống!')
+        }
+        else{
+            setSuccess(email);
+        }
+    }
+
+    name.onblur = name.oninput = function () {
+            if (name.value.trim().length < 6) {
+                 setError(name, 'Tên đăng nhập phải ít nhất 6 ký tự');
+            } else {
+                setSuccess(name);
+            }
+        }
+
+      // Check bỏ trống
+    //   for (let i = 0; i < inputs.length; i++) {
+    //         inputs[i].onblur = inputs[i].oninput = function () {
+    //             if (inputs[i].value.trim()) {
+    //                  setSuccess(inputs[i]);
+                    
+    //             } else {
+    //                 setError(inputs[i],'Trường này không được bỏ trống');
+    //             }
+    //         }
+    //     }
+
+    // btn_dangky.onclick = function(e){
+
+    //     var check = true;
+    //     if(!(email.value.trim() ||number.value.trim()||password.value.trim()||repass.value.trim())){
+    //         let btn_error = document.getElementById('btn_error');
+    //         btn_error.innerHTML = 'Hãy điền đầy đủ các trường';
+    //         check = false;
+    //     }
+    // }
+
+</script> -->
+
+<script>
+    let form = document.querySelector('.auth__form');
+    let name = document.getElementById('name');
+    let email = document.getElementById('email');
+    let number = document.getElementById('number');
+    let password = document.getElementById('password');
+    let repassword = document.getElementById('repassword');
+    let inputs = form.querySelectorAll('input');
+
+    // Check bỏ trống
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].onblur = inputs[i].oninput = function () {
+            if (inputs[i].value.trim()) {
+                setSuccessFor(inputs[i]);
+            } else {
+                setErrorFor(inputs[i], 'Trường này không được bỏ trống');
+            }
+        }
+    }
+    function setErrorFor(input, message) {
+        const formControl = input.parentElement;
+        const p = formControl.querySelector('p');
+        p.innerText = message;
+        formControl.className = 'form-control invalid';
+        input.focus();
+    }
+
+    function setSuccessFor(input) {
+        const formControl = input.parentElement;
+        const p = formControl.querySelector('p');
+        p.innerText = '';
+        formControl.className = 'form-control valid';
+    }
+
+    name.onblur = name.oninput = function () {
+        if (name.value.trim().length < 6) {
+            setErrorFor(name, 'Tên đăng nhập phải it nhất 6 ký tự');
+        } else {
+            setSuccessFor(name);
+        }
+    }
+    function validateEmail(email) {
+        var re = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        return re.test(email);
+    }
+    email.onblur = email.oninput = function () {
+        if (!validateEmail(email.value)) {
+            setErrorFor(email, "Sai định dạng email");
+        }
+        else {
+            setSuccessFor(email);
+        }
+    }
+    //Check pass Mật khẩu phải có số và ký tự thường và ký tự in hoa
+    // function numberPassword(password) {
+    //     var numbers = /[0-9]/g;
+    //     if (password.value.match(numbers)) {
+    //         return true;
+    //     }
+    //     else return false;
+    // }
+    // function charactersPassword(password) {
+    //     var characters = /[a-z]/g;
+    //     if (password.value.match(characters)) {
+    //         return true;
+    //     }
+    //     else return false;
+    // }
+    // function CharactersPassword(password) {
+    //     var Characters = /[A-Z]/g;
+    //     if (password.value.match(Characters)) {
+    //         return true;
+    //     }
+    //     else return false;
+    // }
+    // password.onblur = password.oninput = function () {
+    //     if (!numberPassword(password)||!charactersPassword(password)||!CharactersPassword(password)) {
+    //         setErrorFor(password, "Mật khẩu phải có số, ký tự thường và ký tự in hoa ");
+    //     }
+    //     else {
+    //         setSuccessFor(password);
+    //     }
+    // }
+
+
+    // Ký tự đầu là ký tự in hoa
+    function checkpass(password) {
+        var Characters = /[A-Z]/g;
+        var a = password.value.charAt(0);
+        if (a.match(Characters)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+
+    }
+    password.onblur = password.oninput = function () {
+        if (!checkpass(password)) {
+            setErrorFor(password, "Ký tự đầu phải là ký tự in hoa ");
+        }
+        else {
+            setSuccessFor(password);
+        }
+    }
+    ///^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/ 8 ký tự 1hoa 1 thường 1 ddbiet  1 số
+    // Tối thiểu 7-15 ký tự 1 in thường, 1 số 1 ký tự đb
+    function checkpass(password) {
+        if (password.value.match(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+        password.onblur = password.oninput = function () {
+            if (!checkpass(password)) {
+            setErrorFor(password, "Mật khẩu phải có số, ký tự thường và ký tự in hoa ");
+        }
+        else {
+            setSuccessFor(password);
+        }
+    }
+
+    // Check trùng password 
+    repassword.onblur = repassword.oninput = function () {
+        if (repassword.value.trim() === password.value.trim()) {
+            setSuccessFor(repassword);
+        } else {
+            //setErrorFor(repassword, '');
+            setErrorFor(repassword, 'Mật khẩu chưa trùng khớp');
+        }
+    }
+
+
+    btnReg.onclick = function (e) {
+        var valid = true;
+        if (!(name.value.trim() || email.value.trim() ||  number.value.trim() ||password.value.trim() || repassword.value.trim())) {
+            //alert('Hãy điền đầy đủ các trường');
+            let btn_error = document.getElementById('btn_error');
+            btn_error.innerHTML = 'Hãy điền đầy đủ các trường';
+            valid = false;
+        }
+
+        if (!name.value.trim()) {
+            setErrorFor(name, 'Trường này không được bỏ trống');
+            valid = false;
+            console.log(valid);
+        }
+        else {
+            setSuccessFor(name);
+        }
+        if (!email.value.trim()) {
+            setErrorFor(email, 'Trường này không được bỏ trống');
+            valid = false;
+            console.log(valid);
+        } else {
+            setSuccessFor(email);
+        }
+        if (!number.value.trim()) {
+            setErrorFor(number, 'Trường này không được bỏ trống');
+            valid = false;
+            console.log(valid);
+        }
+        else {
+            setSuccessFor(number);
+        }
+        if (!password.value.trim()) {
+            setErrorFor(password, 'Trường này không được bỏ trống');
+            valid = false;
+            console.log(valid);
+        } else {
+            setSuccessFor(password);
+        }
+        if (!repassword.value.trim()) {
+            setErrorFor(repassword, 'Trường này không được bỏ trống');
+            valid = false;
+            console.log(valid);
+        } else {
+            setSuccessFor(repassword);
+        }
+        if (!valid) {
+            e.preventDefault();
+        }
+    }
+</script>
+</html>
